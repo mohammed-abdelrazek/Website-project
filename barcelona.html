@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barcelona</title>
+        <link rel="icon" href="data:image/png;base64,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">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="barcelona.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a class="fas fa-home" href="main.html" title="Home"></a></li>
+                <li><a class="r" href="real.html" title="real"><img src="real.jpg" width="60px" height="30px"></a></li>
+                <li><a class="b" href="barcelona.html" title="barcelona"><img src="barcelona.png" width="60px" height="30px"></a></li>                        
+                <li><a class="l" href="liver.html" title="liver"><img src="liver.jpg" width="60px" height="30px"></a></li>
+            </ul>
+        </div>
+        <div class="bo">
+            <h1>List of tobics:</h1>
+            <ol>
+                <li><a href="#video">Video.</a></li>
+                <li><a href="#text">about the team.</a></li>
+                <li><a href="#imgs">image of player of the team.</a></li>
+                <li><a href="#t1">List of matches.</a></li>
+                <li><a href="#t2">Summary.</a></li>
+                <li><a href="#t4">List of presidents.</a></li>
+                <li><a href="#t5">Liverpool scorer ranking throughout history.</a></li>
+            </ol>
+        </div>
+        <div class="contaner">
+            <h1 style="text-align: left; color: blue;">FC Barcelona:</h1><hr>
+            <div id="video">
+                <video width="700px" height="400px" controls>
+                    <source src="real.mp4" type="video/mp4">
+                </video>
+                <div id="text">
+                    <span style="font-weight: bolder;">Futbol Club Barcelona</span> (Catalan pronunciation: [fubˈbɔl ˈklub bəɾsəˈlonə] (About this soundlisten)), commonly referred to as Barcelona and colloquially known as Barça ([ˈbaɾsə]), is a Spanish professional football club based in Barcelona, Catalonia, Spain.
+
+                    Founded in 1899 by a group of Swiss, Spanish, English, and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" ("More than a club"). Unlike many other football clubs, the supporters own and operate Barcelona. It is the fourth-most valuable sports team in the world, worth $4.06 billion, and the world's richest football club in terms of revenue, with an annual turnover of €840,8 million.[2][3] The official Barcelona anthem is the "Cant del Barça", written by Jaume Picas and Josep Maria Espinàs.[4]
+                    
+                    Domestically, Barcelona has won a record 74 trophies: 26 La Liga, 30 Copa del Rey, 13 Supercopa de España, 3 Copa Eva Duarte, and 2 Copa de la Liga trophies, as well as being the record holder for the latter four competitions. In international club football, the club has won 20 European and worldwide titles: 5 UEFA Champions League titles, a record 4 UEFA Cup Winners' Cup, a joint record 5 UEFA Super Cup, a record 3 Inter-Cities Fairs Cup, and 3 FIFA Club World Cup.[5] Barcelona was ranked first in the International Federation of Football History & Statistics Club World Ranking for 1997, 2009, 2011, 2012, and 2015[6][7] and currently occupies the second position on the UEFA club rankings.[8] The club has a long-standing rivalry with Real Madrid; matches between the two teams are referred to as El Clásico.
+                </div>
+            </div>
+
+
+
+            <div id="imgs">
+                <div class="img">
+                    <a target="_blank" href="https://s.hs-data.com/bilder/spieler/gross/26622.jpg">
+                        <img src="https://s.hs-data.com/bilder/spieler/gross/26622.jpg">
+                    </a>
+                    <p>
+                        Lionel Andrés Messi Cuccittini is an Argentine professional footballer who plays as a forward and captains both Spanish club Barcelona and the Argentina national team.
+                    </p>
+                </div>
+                <div class="img">
+                    <a target="_blank" href="https://s.hs-data.com/bilder/spieler/gross/43635.jpg">
+                        <img src="https://s.hs-data.com/bilder/spieler/gross/43635.jpg">
+                    </a>
+                    <p>
+                        Luis Alberto Suárez Díaz is a Uruguayan professional footballer who plays as a striker for Spanish club Barcelona and the Uruguay national team.
+                        lays as a striker for Spanish.
+                    </p>
+                </div>
+                <div class="img">
+                    <a target="_blank" href="https://s.hs-data.com/bilder/spieler/gross/153546.jpg">
+                        <img src="https://s.hs-data.com/bilder/spieler/gross/153546.jpg">
+                    </a>
+                    <p>
+                        Antoine Griezmann is a French professional footballer who plays as a forward for Spanish club Barcelona and the French national team.
+                        Born and raised in Mâcon, Griezmann began.
+                    </p>
+                </div>
+                <div class="img">
+                    <a target="_blank" href="https://s.hs-data.com/bilder/spieler/gross/171905.jpg">
+                        <img src="https://s.hs-data.com/bilder/spieler/gross/171905.jpg">
+                    </a>
+                    <p>Sergi Roberto Carnicer is a Spanish professional footballer who plays for Barcelona and the Spain national team. Mainly a central midfielder, he can also operate as a full-back.
+                    </p>
+                </div>
+                <div class="img">
+                <a target="_blank" href="https://s.hs-data.com/bilder/spieler/gross/210868.jpg">
+                    <img src="https://s.hs-data.com/bilder/spieler/gross/210868.jpg">
+                </a>
+                <p>
+                    Clément Nicolas Laurent Lenglet is a French professional footballer who plays as a centre-back for Spanish club Barcelona and the French national team. He began his career.
+                </p>
+                </div>
+            </div>
+
+
+
+            <div class="tab">
+                <h3>List of matches:</h3><hr style="margin-bottom: 5px;">
+                <p>Barcelona and Real Madrid have faced each other in every La Liga season since its inception in 1929, as inaugural members and two of the only three teams (the other being Athletic Bilbao) to have never been relegated from the Primera División.</p>
+                <table id="t1" width="90%" style="margin-left: 5%;">
+                    <tr>
+                        <th width="2%">#</th>
+                        <th width="10%">Date</th>
+                        <th width="2%">R.</th>
+                        <th width="8%">Home team</th>
+                        <th width="8%">Away team</th>
+                        <th width="8%">Score (FT/HT)</th>
+                        <th width="30%">Goals (Home)</th>
+                        <th width="30%">Goals (Away)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>17 February 1929</td>
+                        <td>2</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>1–2 (0–1)</td>
+                        <td>Parera (70)</td>
+                        <td>Morera (10, 55)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>9 May 1929</td>
+                        <td>11</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>0–1 (0–0)</td>
+                        <td></td>
+                        <td>Sastre (83)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>26 January 1930</td>
+                        <td>9</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>1–4 (0–3)</td>
+                        <td>Bestit (63)</td>
+                        <td>Rubio (10, 37), F. López (17), Lazcano (71)</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>30 March 1930</td>
+                        <td>18</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>5–1 (3–0)</td>
+                        <td>Rubio (5, 23), Lazcano (42, 68, 72)</td>
+                        <td>Goiburu (84)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>1 February 1931</td>
+                        <td>9</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>0–0</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>5 April 1931</td>
+                        <td>18</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>3–1 (2–1)</td>
+                        <td>Ramón (12, 35, 73)</td>
+                        <td>Eugenio (38)</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>31 January 1932</td>
+                        <td>9</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>2–0 (2–0)</td>
+                        <td>Olivares (26, 40)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>20 March 1960</td>
+                        <td>26</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>3–1 (0–0)</td>
+                        <td>Kocsis(50),Martínez(60),Villaverde(62)</td>
+                        <td>di Stéfano (58)</td>
+                    </tr>
+                    <tr>						
+                        <td>9</td>
+                        <td>28 February 1965</td>
+                        <td>24</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>1–2 (1–0)</td>
+                        <td>Ré (40)</td>
+                        <td>Pirri (63), Serena (70)</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>25 October 1970</td>
+                        <td>7</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>0–1 (0–1)</td>
+                        <td></td>
+                        <td>Zabalza (28)</td>
+                    </tr>
+                    <tr>						
+                        <td>11</td>
+                        <td>28 December 1975</td>
+                        <td>15</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>2–1 (1–0)</td>
+                        <td>Neeskens (3), Rexach (89)</td>
+                        <td>Pirri (64)</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>30 November 1980</td>
+                        <td>13</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td >2–1 (1–1)</td>
+                        <td>Schuster (15), Quini (64)</td>
+                        <td>Juanito (22)</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>9 November 1985</td>
+                        <td>11</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td>2–0 (1–0)</td>
+                        <td>Marcos (2), Calderé (72)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15 February 1990</td>
+                        <td>25</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>3–2 (2–1)</td>
+                        <td>Míchel(24),Butragueño(45),Hugo Sánchez(p. 46)</td>
+                        <td>Salinas (54, 57)</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>7 January 1995</td>
+                        <td>16</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>5–0 (3–0)</td>
+                        <td>Zamorano(5,21,39),Luis Enrique(68),Amavisca(70)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>26 February 2000</td>
+                        <td>26</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>3–0 (2–0)</td>
+                        <td>Roberto Carlos (5), Anelka (19), Morientes (52)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>19 November 2005</td>
+                        <td>12</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>0–3 (0–1)</td>
+                        <td></td>
+                        <td>Eto'o (14), Ronaldinho (59, 77)</td>
+                    </tr>
+                    <tr>					
+                        <td>18</td>
+                        <td>29 November 2010</td>
+                        <td>13</td>
+                        <td>Barcelona</td>
+                        <td>Real Madrid</td>
+                        <td >5–0 (2–0)</td>
+                        <td>Xavi (9), Pedro (17), Villa (54, 56), Jeffrén (90)</td>
+                        <td></td>
+                    </tr>
+                    <tr>			
+                        <td>19</td>
+                        <td>21 November 2015</td>
+                        <td>12</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td>0–4 (0–2)</td>
+                        <td></td>
+                        <td>L. Suárez (11, 74), Neymar (39), Iniesta (53)</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>1 March 2020</td>
+                        <td>26</td>
+                        <td>Real Madrid</td>
+                        <td>Barcelona</td>
+                        <td >2–0 (0–0)</td>
+                        <td>Vinícius (71), Mariano (90+2)</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <h3 style="margin-top: 5%;">Summaty:</h3>
+                <table id="t2" width="15%">
+                    <tr>
+                        <td>Real Madrid wins</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td>Draws</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Barcelona wins</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>Real Madrid goals</td>
+                        <td>288</td>
+                    </tr>
+                    <tr>
+                        <td>Barcelona goals</td>
+                        <td>288</td>
+                    </tr>
+                    <tr style="background-color: black; color: white;">
+                        <td>Total matches</td>
+                        <td>180</td>
+                    </tr>
+                </table>
+                <table id="t3" width="50%">
+                    <tr>
+                        <th>Team</th>
+                        <th>Home Wins</th>
+                        <th>Home Draws</th>
+                        <th>Home Losses</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                    </tr>
+                    <tr>
+                        <td>Real Madrid</td>
+                        <td>53</td>
+                        <td>15</td>
+                        <td>22</td>
+                        <td>183</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Barcelona</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>178</td>
+                        <td>105</td>
+                    </tr>
+                </table>
+                <table id="t4" width="50%">
+                    <caption><h3>List of presidents:</h3></caption>
+                    <tr>
+                        <th width="1%">#</th>
+                        <th width="10%">Name</th>
+                        <th width="7%">From</th>
+                        <th width="7%">To</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Walter Wild</td>
+                        <td>29 November 1899</td>
+                        <td>25 April 1901</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bartomeu Terradas</td>
+                        <td>25 April 1901</td>
+                        <td>5 September 1902</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td> Paul Haas</td>
+                        <td>5 September 1902</td>
+                        <td>17 September 1903</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Joan Gamper</td>
+                        <td>2 December 1908</td>
+                        <td>14 October 1909</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>		
+                        <td>Àlvar Presta</td>
+                        <td>30 July 1914</td>
+                        <td>29 September 1914</td>
+                    </tr>
+                    <tr> 		
+                        <td>6</td>
+                        <td>Gaspar Rosés</td>
+                        <td>25 June 1916</td>
+                        <td>17 June 1917</td>
+                    </tr>
+                    <tr>		
+                        <td>7</td>
+                        <td>Ricard Graells</td>
+                        <td>10 June 1919</td>
+                        <td>27 June 1920</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Joan Gamper</td>
+                        <td>17 July 1921</td>
+                        <td>29 July 1923</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Joan Gamper</td>
+                        <td>1 June 1924</td>
+                        <td>17 December 1925</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Tomàs Rosés</td>
+                        <td>23 March 1929</td>
+                        <td>30 June 1930</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Antoni Oliver</td>
+                        <td>22 October 1931</td>
+                        <td>20 December 1931</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Josep Sunyol</td>
+                        <td>27 July 1935</td>
+                        <td>6 August 1936</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Josep Vidal-Ribas</td>
+                        <td>10 July 1942</td>
+                        <td>13 August 1942</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Agustí Montal Galobart</td>
+                        <td>20 September 1946</td>
+                        <td>16 July 1952</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Narcís de Carreras</td>
+                        <td>17 January 1968</td>
+                        <td>18 December 1969</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Raimon Carrasco</td>
+                        <td>18 December 1977</td>
+                        <td>1 July 1978</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Enric Reyna</td>
+                        <td>12 February 2003</td>
+                        <td>6 May 2003</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Josep Maria Bartomeu</td>
+                        <td>23 January 2014</td>
+                        <td>present</td>
+                    </tr>
+                </table>
+                <table id="t5" width="40%">
+                    <caption><h3>Barcelona scorer ranking throughout history:</h3></caption>
+                    <tr>
+                        <th width="1%">#</th>
+                        <th width="10%">player</th>
+                        <th width="10%">goals</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Lionel Messi</td>
+                        <td>507</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cesar Alvarez</td>
+                        <td>232</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ladislao Kopala</td>
+                        <td>194</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Luis Suarez</td>
+                        <td>143 </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Samuel Eto'o</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Rivaldo</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Mariano Martin</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Patrick Clifert</td>
+                        <td>123 </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Carlos Rexas</td>
+                        <td>122</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Josep Escola</td>
+                        <td>118</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>alert("Welcome to our page")</script>
+    </body>
+</html>

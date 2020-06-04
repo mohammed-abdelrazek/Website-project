@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>registration</title>
+        <link rel="icon" href="Untitled-3.jpg">
+        <link rel="stylesheet" href="form.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a class="fas fa-home" href="main.html" title="Home"></a></li>
+            </ul>
+        </div>
+        <div class="container">
+        
+            <form action="/action_page.php">
+                <h1>registration</h1>
+                <fieldset>
+                    <legend>personal information</legend>
+                    <p> First name :</p>
+                    <input type="text" name="Fname" placeholder="Enter your first name" size="15" required> <br>
+                    <p>Last name :</p>
+                    <input type="text" name="Lname" placeholder="Enter your last name" size="15" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <p>Email :</p>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>password</legend>
+                    <p>password :</p>
+                    <input id="pass" type="password" size="8" maxlength="8" minlength="8" required><p id="demo"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Address</legend>
+                    <input type="text" name="add" placeholder="Enter your address" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <select>
+                        <option name="mail">mail</option>
+                        <option name="femail">femail</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>date of birth</legend>
+                    <input type="date" neme="d" min="13-1-1930" max="31-1-2010" required> 
+                </fieldset>
+                <fieldset>
+                    <legend>Telphone</legend>
+                    <input type="tel" name="tel" size="11" maxlength="11" minlength="11" pattern="^(0|[1-9][0-9]*)" required>
+                    <p id="demo2"></p>
+                </fieldset>
+                <input type="submit" name="send" value="submit" onclick="check()" style="background-color:aqua">
+            </form>
+        </div>
+    </body>
+</html>
